@@ -1,0 +1,95 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+html{
+  background-color: rgb(230, 229, 245);
+}
+
+.heading{
+  background-color:white;
+  text-transform: uppercase;
+  font-family: 'Karla', sans-serif;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  color: rgb(162, 160, 185);
+}
+.cards{
+    
+}
+
+.card:hover{
+  transform: scale(1.05,1.05);
+  transition: 0.5s;
+  box-shadow: 7px 7px 9px 0px rgb(136, 131, 131);
+}
+.card{
+    width: 250px;
+    height: 244px;
+    border-radius: 10px;
+    margin: 40px 98px;
+    float: left;
+    background-color:white;
+    box-shadow: 1px 1px 7px rgb(136, 131, 131);
+    transform-style: inherit;
+}
+
+.image{
+  width: 250px; 
+  border-radius:10px 10px 0px 0px;
+}
+
+.cardBody{
+  
+}
+
+.cardTitle{
+  font-family: 'Karla', sans-serif;
+  font-size: 15px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.cardText{
+  text-transform: uppercase;
+  font-family: 'Karla', sans-serif;
+  font-size: 12px;
+  margin-left: 15px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  color: rgb(162, 160, 185);
+}
+
+.button{
+    text-decoration: none;
+    color:rgb(162, 160, 185);
+    border: 1px solid rgb(162, 160, 185);
+    margin-left:15px;
+    padding: 2px 5px;
+    font-family: 'Karla', sans-serif;
+}
+
+.button:hover{
+  background-color: rgb(58, 52, 52);
+  color: white;
+  transform: scale(1.1,1.1);
+  transition:0.5s;
+  border: none;
+}
+
+@media only screen and (max-width: 550px){
+  .cards{
+      display: flex;
+      flex-direction: column;
+  }
+  .card{
+      margin:10px;
+  }
+  .heading{
+    font-size: 90%;
+    padding-top: 3%;
+  }
+}
